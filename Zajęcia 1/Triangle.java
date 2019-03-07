@@ -1,7 +1,5 @@
 import java.util.Scanner;
 public class Triangle extends Figure implements Print {
-    double perimeter = 0;
-    double area = 0;
     Scanner input = new Scanner(System.in);
     public void print()
     {
@@ -14,9 +12,9 @@ public class Triangle extends Figure implements Print {
     {
 
         System.out.println("PODAJ DŁUGOŚĆ BAZY TRÓJKĄTA");
-        int base = input.nextInt();
+        double base = input.nextInt();
         System.out.println("PODAJ WYSOKOŚĆ TRÓJKĄTA");
-        int height = input.nextInt();
+        double height = input.nextInt();
         this.area = base*height/2;
         return this.area;
     }
@@ -25,11 +23,11 @@ public class Triangle extends Figure implements Print {
     double calculatePerimeter()
     {
         System.out.println("PODAJ DŁUGOŚĆ PIERWSZEGO BOKU TRÓJKĄTA");
-        int side1 = input.nextInt();
+        double side1 = input.nextInt();
         System.out.println("PODAJ DŁUGOŚĆ DRUGIEGO BOKU TRÓJKĄTA");
         int side2 = input.nextInt();
         System.out.println("PODAJ DŁUGOŚĆ TRZECIEGO BOKU TRÓJKĄTA");
-        int side3 = input.nextInt();
+        double side3 = input.nextInt();
         this.perimeter = side1 + side2 + side3;
         return this.perimeter;
     }

@@ -1,7 +1,5 @@
 import java.util.Scanner;
 public class Rectangle extends Figure implements Print {
-    double perimeter = 0;
-    double area = 0;
     Scanner input = new Scanner(System.in);
     public void print()
     {
