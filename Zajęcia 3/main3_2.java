@@ -38,7 +38,7 @@ class Substring
             {
                 if(i != a.length())
                 {
-                    
+
                 }
                 ok = true;
                 if(b.charAt((StartPoint + i)%b.length()) != a.charAt(i))
