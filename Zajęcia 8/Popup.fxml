@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="292.0" prefWidth="234.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PopupController">
+    <children>
+        <TextField fx:id="Title" layoutX="46.0" layoutY="25.0" promptText="Title" />
+        <Button layoutX="106.0" layoutY="253.0" mnemonicParsing="false" onAction="#addTaskButtonController" text="k" />
+        <RadioButton fx:id="RadioHigh" layoutX="176.0" layoutY="65.0" mnemonicParsing="false" onAction="#setRadioHigh" prefHeight="17.0" prefWidth="52.0" text="High" />
+        <RadioButton fx:id="RadioMed" layoutX="100.0" layoutY="65.0" mnemonicParsing="false" onAction="#setRadioMed" text="Medium" />
+        <RadioButton fx:id="RadioLow" layoutX="47.0" layoutY="65.0" mnemonicParsing="false" onAction="#setRadioLow" selected="true" text="Low" />
+        <TextArea fx:id="DescriptionInput" layoutX="46.0" layoutY="92.0" prefHeight="52.0" prefWidth="149.0" promptText="Descrition" />
+        <Text layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priority:" />
+      <DatePicker fx:id="Deadline" layoutX="30.0" layoutY="176.0" promptText="Choose deadline date" showWeekNumbers="true" />
+      <Text layoutX="41.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Deadline" />
+    </children>
+</AnchorPane>

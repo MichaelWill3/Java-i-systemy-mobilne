@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.TextArea?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainWindowController">
+    <children>
+        <Button layoutX="256.0" layoutY="334.0" mnemonicParsing="false" onAction="#showPopup" text="Add new task" />
+        <ListView fx:id="ToDoList" layoutX="14.0" layoutY="55.0" onMouseClicked="#clickOnToDoList" prefHeight="200.0" prefWidth="158.0" />
+        <ListView fx:id="InProgressList" layoutX="206.0" layoutY="78.0" onMouseClicked="#clickOnInProgressList" prefHeight="200.0" prefWidth="158.0" />
+        <ListView fx:id="DoneList" layoutX="400.0" layoutY="100.0" onMouseClicked="#clickOnDoneList" prefHeight="200.0" prefWidth="158.0" />
+        <Button fx:id="fromToDoToInProgress" layoutX="147.0" layoutY="255.0" mnemonicParsing="false" onAction="#fromToDoToInProgress" text="&gt;" />
+        <Button fx:id="FromInProgressToToDo" layoutX="206.0" layoutY="276.0" mnemonicParsing="false" onAction="#FromInProgressToToDo" text="&lt;" />
+        <Button fx:id="FromInProgressToDone" layoutX="339.0" layoutY="276.0" mnemonicParsing="false" onAction="#FromInProgressToDone" text="&gt;" />
+        <Button fx:id="FromDoneToInProgress" layoutX="400.0" layoutY="300.0" mnemonicParsing="false" onAction="#FromDoneToInProgress" text="&lt;" />
+        <TextArea fx:id="description" layoutX="14.0" layoutY="304.0" prefHeight="85.0" prefWidth="158.0" />
+      <Text layoutX="63.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To do">
+         <font>
+            <Font name="3DS Fonticon CID" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="228.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In progress">
+         <font>
+            <Font name="3DS Fonticon CID" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="454.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Done">
+         <font>
+            <Font name="3DS Fonticon CID" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="63.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="About">
+         <font>
+            <Font name="3DS Fonticon CID" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="492.0" layoutY="347.0" mnemonicParsing="false" onAction="#deserialize" text="Import Kanban" />
+      <Button layoutX="491.0" layoutY="377.0" mnemonicParsing="false" onAction="#serialize" prefHeight="25.0" prefWidth="95.0" text="Export Kanban" />
+    </children>
+</AnchorPane>
